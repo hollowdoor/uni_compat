@@ -27,5 +27,8 @@
   "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io)",
   "main": "dist/bundle.js",
   "jsnext:main": "dist/bundle.es.js",
-  "module": "dist/bundle.es.js"
+  "module": "dist/bundle.es.js",
+  "dependencies": {
+    "supports-color": "^5.1.0"
+  }
 }

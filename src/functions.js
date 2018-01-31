@@ -8,7 +8,7 @@ export function supportsColor(){
     }
     const supports = require('supports-color');
     supports.browser = false;
-    return supports.stdout;
+    return supports;
 }
 
 export function debugging(){

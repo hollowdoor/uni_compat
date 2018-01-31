@@ -17,7 +17,7 @@ function supportsColor(){
     }
     var supports = require('supports-color');
     supports.browser = false;
-    return supports.stdout;
+    return supports;
 }
 
 function debugging(){
