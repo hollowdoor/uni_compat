@@ -20,7 +20,10 @@ function supportsColor(){
 }
 
 function debugging(){
-    return (IN_BROWSER && (/(^\?|&)DEBUG=(1|true)/.test(window.location.search + ''))) || !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
+    if(IN_BROWSER){
+        return /(^\?|&)DEBUG=(1|true)/.test(window.location.search + '');
+    }
+    return !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
 }
 
 exports.IN_BROWSER = IN_BROWSER;

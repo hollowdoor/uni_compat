@@ -17,7 +17,10 @@ function supportsColor(){
 }
 
 function debugging(){
-    return (IN_BROWSER && (/(^\?|&)DEBUG=(1|true)/.test(window.location.search + ''))) || !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
+    if(IN_BROWSER){
+        return /(^\?|&)DEBUG=(1|true)/.test(window.location.search + '');
+    }
+    return !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
 }
 
 export { IN_BROWSER, IN_NODE, SUPPORTS_UTF8, uni, supportsColor, debugging, TERM_SUPPORTS_COLOR };
