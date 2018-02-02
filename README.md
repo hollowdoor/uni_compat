@@ -27,13 +27,15 @@ import {
 //Import some functions
 import {
     supportsColor,
-    debugging
+    debugging,
+    supportsLogStyles,
 } from 'uni-compat';
 const TERM_SUPPORTS_COLOR = (()=>{
     const supports = supportsColor();
     return !supports.browser && supports.stdout.hasBasic;
 })();
 const DEBUG = debugging();
+const BROWSER_LOG_STYLES = supportsLogStyles();
 //Your code...
 ```
 
@@ -44,6 +46,10 @@ const DEBUG = debugging();
 ## debugging()
 
 `debugging()` checks for `process.env['DEBUG']`, or `/(^\?|&)DEBUG=(1|true)/.test(window.location.search)` in the browser. `debugging()` returns true if either test is true.
+
+## supportsLogStyles()
+
+When in the browser `supportsLogStyles()` returns true. This uses [browser-supports-log-styles](https://github.com/gr2m/browser-supports-log-styles).
 
 About
 ---

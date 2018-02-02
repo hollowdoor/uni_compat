@@ -1,4 +1,9 @@
 import { IN_BROWSER } from './constants.js';
+import _supportsLogStyles from 'browser-supports-log-styles';
+
+export function supportsLogStyles(){
+    return IN_BROWSER && _supportsLogStyles();
+}
 
 export function supportsColor(){
     if(IN_BROWSER){

@@ -29,6 +29,7 @@
   "jsnext:main": "dist/bundle.es.js",
   "module": "dist/bundle.es.js",
   "dependencies": {
+    "browser-supports-log-styles": "^1.1.7",
     "supports-color": "^5.1.0"
   }
 }

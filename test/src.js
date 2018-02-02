@@ -1,4 +1,4 @@
-import { IN_BROWSER, SUPPORTS_UTF8, debugging } from '../';
+import { IN_BROWSER, SUPPORTS_UTF8, debugging, supportsLogStyles } from '../';
 
 if(IN_BROWSER){
     console.log('in browser');
@@ -10,4 +10,4 @@ console.log(SUPPORTS_UTF8 ? 'supports utf8' : `doesn't support utf8`)
 
 const DEBUG = debugging();
 
-//console.log(supportsColor());
+console.log('supports log styles ',supportsLogStyles());
