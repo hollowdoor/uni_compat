@@ -57,7 +57,6 @@ exports.uni = uni;
 exports.supportsLogStyles = supportsLogStyles;
 exports.supportsColor = supportsColor;
 exports.debugging = debugging;
-exports.TERM_SUPPORTS_COLOR = TERM_SUPPORTS_COLOR;
 
 }((this.uniCompat = this.uniCompat || {})));
 //# sourceMappingURL=uni-compat.js.map

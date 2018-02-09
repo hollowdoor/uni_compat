@@ -42,5 +42,4 @@ exports.uni = uni;
 exports.supportsLogStyles = supportsLogStyles;
 exports.supportsColor = supportsColor;
 exports.debugging = debugging;
-exports.TERM_SUPPORTS_COLOR = TERM_SUPPORTS_COLOR;
 //# sourceMappingURL=bundle.js.map

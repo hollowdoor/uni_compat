@@ -29,5 +29,5 @@ function debugging(){
     return !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
 }
 
-export { IN_BROWSER, IN_NODE, SUPPORTS_UTF8, uni, supportsLogStyles, supportsColor, debugging, TERM_SUPPORTS_COLOR };
+export { IN_BROWSER, IN_NODE, SUPPORTS_UTF8, uni, supportsLogStyles, supportsColor, debugging };
 //# sourceMappingURL=bundle.es.js.map

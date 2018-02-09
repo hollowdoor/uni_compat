@@ -22,5 +22,3 @@ export function debugging(){
     }
     return !!process.env['DEBUG'] && process.env['DEBUG'] === 1 || process.env['DEBUG'] === 'true';
 }
-
-export { TERM_SUPPORTS_COLOR };
